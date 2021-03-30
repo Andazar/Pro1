@@ -228,6 +228,7 @@ public class App
         //System.out.println("25ый элемент массива " + fib[24]);
          System.out.println(Arrays.toString(fib));
 
+
     }
         }
 
