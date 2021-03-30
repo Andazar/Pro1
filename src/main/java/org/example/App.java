@@ -288,7 +288,7 @@ for( a = 10; a < 21; a++)
 }
 
 
-*/
+
         //Счастливые билеты
         int b=0;
         //С помощью простого цикла и деления по модулю получим значения всех совпадений. Увеличиваем "счетчик" каждый раз, когда сумма первых 3 чисел равна сумме второй тройки. Так как минимальное такое число может быть только после 1000, начинаем цикл с нее
@@ -306,8 +306,63 @@ for( a = 10; a < 21; a++)
 
         System.out.println("Рулон билетов с номерами от 000001 до 999999 имеет " + b + " счастливых билетов.");
 
+   //поиск простого числа
+       int num = 4;
+       String numStr = " ";
+        for(int i = 2; i < num; i++)
+        {
+            if(num % i == 0) {numStr = "Не простое"; break;}
+            else {numStr= "Простое"; }
+        }
+
+        System.out.println(numStr);
+*/
+
+        int a = 50;
+        int b = 70;
+        int f = 0;
+        //int t = 0;
+        String numStr = " ";
+        String numStr2 = "Простые числа: ";
+    for (int j = a; j < b+1; j++)
+    {
+        for (int i = 2; i < j; i++)
+        {
+            if (j % i == 0) {
+                numStr = j + ": Не простое число";
+                f = 0;
+                break;
+            } else {
+                numStr = j + ": Простое число";
+                f = 1;
+            }
+        }
+        System.out.println(numStr);
+       // Список всех простых
+        if (f == 1) {
+            numStr2 = numStr2 + j+ ", ";
+        } else {  numStr2 = numStr2 ;   }
+
+    }
+
+        System.out.println(numStr2);
 
 
+
+
+//поиск простого числа
+/*const num = 125;
+        let numStr, de = 2;
+        for(let i = 2; i < num; i++)
+        {
+            if(num % i === 0) {numStr = "Не простое";}
+            else {numStr= "Простое"; de++}
+        }
+
+        let out = numStr;
+
+        console.log(numStr, "Делитель")
+*/
 
     }
         }
