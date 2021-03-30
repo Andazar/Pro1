@@ -362,10 +362,10 @@ for( a = 10; a < 21; a++)
         let out = numStr;
 
         console.log(numStr, "Делитель")
-*/
+
 
         //День в правильном падеже
-        int day = 3;
+        int day = 1;
         String dayString = " день";
 
         switch (day) {
@@ -390,9 +390,80 @@ for( a = 10; a < 21; a++)
         }
         System.out.println(day + dayString);
 
+*/
+
+        //Массив из целых чисел
+      int a = 1;
+      int b = 25;
+      int sum = 0;
+      int sum2 = 0;
+      int mass[] = new int[25];
+      int mass2[] = {100, 11, -25, -1, 0, 22, 86, -3, -31};
+      int avg;
+      int avg2;
+      int max = mass[0];
+      int max2 = mass2[0];
+      int min = mass[0];
+      int min2= mass2[0];
+      int even = 0;
+      int even2= 0;
+       // int maxIndex = 0;
+       // int maxIndex2 = 0;
+
+
+        for(int i = 0; i < b; i++)
+        {
+            mass[i] = a;
+            //System.out.println( (i+1) + "ый элемент массива " + fib[i]);
+            a++;
+        }
+
+        for (int j = 0; j < mass.length; j++) {
+            sum += mass[j];
+        }
+        avg = sum / mass.length;
+
+
+        for (int j = 0; j < mass2.length; j++) {
+            sum2 += mass2[j];
+        }
+        avg2 = sum2 / mass2.length;
+
+
+        for (int i : mass) {
+             if( i > max) {   max = i; }
+             if( i < min) {   min = i; }
+
+            if( i % 2 == 0) {   even += 1; }
+        }
+
+
+        for (int i : mass2) {
+            if( i > max2) {  max2 = i; }
+            if( i < min2) {  min2 = i; }
+
+            if( i % 2 == 0) {  even2 += 1; }
+        }
 
 
 
+
+        //System.out.println("25ый элемент массива " + fib[24]);
+        System.out.println("Первый массив " + Arrays.toString(mass));
+        System.out.println("Среднее = " + avg);
+        //System.out.println(NumberUtils.max(age));
+        System.out.println(max);
+        System.out.println(min);
+        System.out.println(even);
+        //System.out.println("Индекс максимального элемента: " + maxInd);
+
+
+        System.out.println("--------------------" );
+        System.out.println("Второй массив " + Arrays.toString(mass2));
+        System.out.println("Среднее = " + avg2);
+        System.out.println(max2);
+        System.out.println(min2);
+        System.out.println(even2);
 
     }
         }
