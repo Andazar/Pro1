@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Arrays;
+
 /**
  * Hello world!
  *
@@ -10,9 +12,9 @@ public class App
     {
         System.out.println( "Hello World!" );
 
-               int a = 10;
+          /*      int a = 10;
                 int b = 20;
-         /*        int c = 25;
+                int c = 25;
                 int d = 25;
                 System.out.println("a + b = " + (a + b));
                 System.out.println("a - b = " + (a - b));
@@ -26,7 +28,7 @@ public class App
                 System.out.println("d++   = " +  (d++));
                 System.out.println("++d   = " +  (++d));
 */
-
+/*
         int l ;
 
         System.out.println("a  = " +  a);//смотреть по F12
@@ -39,7 +41,7 @@ public class App
         System.out.println("a  = " +  a);//смотреть по F12
         System.out.println("b  = " +  b);//смотреть по F12
 
-/*
+
         System.out.println("a == b = " + (a == b) );
         System.out.println("a != b = " + (a != b) );
         System.out.println("a > b = " + (a > b) );
@@ -183,9 +185,48 @@ public class App
        // int[][] nums2 = { { 0, 1, 2 }, { 3, 4, 5 } };
 
 
-       // nums2[1][0]=44;
-       // System.out.println(nums2[1][1]);
+      //  nums2[1][0]=44;
+      // System.out.println(nums2[1][1]);
 
+        //конструкция с while:
+
+/*        int a = 1;
+
+        while (a < 11) {
+            System.out.println(a);
+            a++; //увеличиваем а на единицу
+        }
+
+        //цикл с постусловием:
+
+        int a = 1;
+        do {
+            System.out.println(a);
+            a++; //увеличиваем а на единицу
+        } while (a < 11);
+
+        // с помощью for:
+
+        for (а=1; a<11; i++) {
+            System.out.println(a);
+        }
+*/
+
+        //Массив из Последовательности Фибонначи
+        int a = 0;
+        int b = 1;
+        int i ;
+        int fib[] = new int[25];
+        for(i = 0; i < 25; i++){
+            fib[i] = a;
+            System.out.println( (i+1) + "ый элемент массива " + fib[i]);
+            int temp = b;
+            b = a + b;
+            a = temp;
+
+        }
+        //System.out.println("25ый элемент массива " + fib[24]);
+         System.out.println(Arrays.toString(fib));
 
     }
         }
