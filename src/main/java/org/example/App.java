@@ -210,7 +210,7 @@ public class App
         for (а=1; a<11; i++) {
             System.out.println(a);
         }
-*/
+
 
         //Массив из Последовательности Фибонначи
         int a = 0;
@@ -247,11 +247,64 @@ public class App
         int fib3[] = new int[25];
         while (q < 25) {
          fib3[q] = fib[(fib.length-1)-q];
-          System.out.println( (q+1) + "ый элемент массива " + fib3[q]);
+          //System.out.println( (q+1) + "ый элемент массива " + fib3[q]);
             q++; //увеличиваем а на единицу
         }
 
         System.out.println(Arrays.toString(fib3));
+*/
+// Вывести  таблицу умножения от 10 до 20.
+
+        int a = 10;
+        int b = 10;
+        int tab[] = new int[11];
+        int head[] = new int[11];
+
+        int j = 0;
+
+        String t;
+        String head2 = "  ";
+for( a = 10; a <= 20; a++)
+        {
+            head[j] =  a;
+            t = "   " + head[j];
+            head2 =  head2 + t;
+            j++;
+        }
+        System.out.println( head2);
+//System.out.println("    " +Arrays.toString(head));
+
+
+for( a = 10; a < 21; a++)
+{
+    int i = 0;
+  for(b = 10; b < 21; b++)
+      {
+         tab[i] = a*b;
+        //console.log(String(a),"*",String(b),"=", a*b);
+        i++;
+      }
+    System.out.println(a + "  " + Arrays.toString(tab));
+}
+/*
+let str="    ";
+for( a = 10; a <= 20; a++)
+{
+   str += a + "   "
+}
+console.log(str);
+
+for( a = 10; a < 21; a++)
+{
+  str=a+"  "
+  for(b = 10; b < 21; b++)
+      {
+         str += a*b + "  "
+      }
+  console.log(str);
+}
+*/
+
     }
         }
 
