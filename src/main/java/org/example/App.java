@@ -219,7 +219,7 @@ public class App
         int fib[] = new int[25];
         for(i = 0; i < 25; i++){
             fib[i] = a;
-            System.out.println( (i+1) + "ый элемент массива " + fib[i]);
+            //System.out.println( (i+1) + "ый элемент массива " + fib[i]);
             int temp = b;
             b = a + b;
             a = temp;
@@ -229,6 +229,29 @@ public class App
          System.out.println(Arrays.toString(fib));
 
 
+        //Массив обр порядке из Последовательности Фибонначи
+
+        int fib2[] = new int[25];
+        for(int j = 0; j < 25; j++){
+            fib2[j] = fib[(fib.length-1)-j];
+            //System.out.println( (j+1) + "ый элемент массива " + fib2[j]);
+
+
+        }
+        //System.out.println("25ый элемент массива " + fib[24]);
+        System.out.println(Arrays.toString(fib2));
+
+
+
+        int q =0;
+        int fib3[] = new int[25];
+        while (q < 25) {
+         fib3[q] = fib[(fib.length-1)-q];
+          System.out.println( (q+1) + "ый элемент массива " + fib3[q]);
+            q++; //увеличиваем а на единицу
+        }
+
+        System.out.println(Arrays.toString(fib3));
     }
         }
 
