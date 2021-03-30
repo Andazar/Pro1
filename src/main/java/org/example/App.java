@@ -316,7 +316,7 @@ for( a = 10; a < 21; a++)
         }
 
         System.out.println(numStr);
-*/
+
 
         int a = 50;
         int b = 70;
@@ -347,7 +347,7 @@ for( a = 10; a < 21; a++)
 
         System.out.println(numStr2);
 
-
+*/
 
 
 //поиск простого числа
@@ -363,6 +363,36 @@ for( a = 10; a < 21; a++)
 
         console.log(numStr, "Делитель")
 */
+
+        //День в правильном падеже
+        int day = 3;
+        String dayString = " день";
+
+        switch (day) {
+            case 1:
+                dayString = dayString;
+                break;
+            case 2:
+            case 3:
+            case 4:
+                dayString = " дня";
+                break;
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+                dayString = " дней";
+                break;
+            default: dayString = " - Неизвестный день";
+               break;
+        }
+        System.out.println(day + dayString);
+
+
+
+
 
     }
         }
