@@ -157,7 +157,7 @@ public class App
         System.out.println("foo равен bar ? " + (foo.equals(bar))); // Метод equals служит для проверки двух объектов на равенство
         System.out.println("foo == baz ? " + (foo == baz));
         System.out.println("foo равен baz ? " + (foo.equals(baz)));
-*/
+
 
         int nums[] = new int[4]; // массив из 4 чисел
         //int[] nums2 = new int[5]; // массив из 5 чисел
@@ -179,7 +179,7 @@ public class App
 
         System.out.println("Длина массива " + length);
         System.out.println("Последний элемент массива " + last);
-
+*/
 
        // int[] nums1 = new int[] { 0, 1, 2, 3, 4, 5 };
        // int[][] nums2 = { { 0, 1, 2 }, { 3, 4, 5 } };
@@ -254,7 +254,7 @@ public class App
         System.out.println(Arrays.toString(fib3));
 */
 // Вывести  таблицу умножения от 10 до 20.
-
+/*
         int a = 10;
         int b = 10;
         int tab[] = new int[11];
@@ -286,24 +286,28 @@ for( a = 10; a < 21; a++)
       }
     System.out.println(a + "  " + Arrays.toString(tab));
 }
-/*
-let str="    ";
-for( a = 10; a <= 20; a++)
-{
-   str += a + "   "
-}
-console.log(str);
 
-for( a = 10; a < 21; a++)
-{
-  str=a+"  "
-  for(b = 10; b < 21; b++)
-      {
-         str += a*b + "  "
-      }
-  console.log(str);
-}
+
 */
+        //Счастливые билеты
+        int b=0;
+        //С помощью простого цикла и деления по модулю получим значения всех совпадений. Увеличиваем "счетчик" каждый раз, когда сумма первых 3 чисел равна сумме второй тройки. Так как минимальное такое число может быть только после 1000, начинаем цикл с нее
+        for(int i=0;i<1000000;i++){
+            int i1=i/100000%10,
+                i2=i/10000%10,
+                i3=i/1000%10,
+                i4=i/100%10,
+                i5=i/10%10,
+                i6=i%10;
+            if((i1+i2+i3)==(i4+i5+i6)){
+                b++;
+            }
+        }
+
+        System.out.println("Рулон билетов с номерами от 000001 до 999999 имеет " + b + " счастливых билетов.");
+
+
+
 
     }
         }
